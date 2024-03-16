@@ -4,17 +4,16 @@ import Home from './containers/home';
 import Project from './containers/projects';
 import Creative from './containers/creatives';
 import Reach from './containers/reach';
-
+import Navbar from './components/navbar';
 
 function App() {
   return (
     <div className="App">
-      {/* navbar js */}
-      {/* navbar */}
       {/* main content */}
       <div className='row'>
-        <div className='md-col-9'>Main Content</div>
-        <div className='md-col-3'>Header</div>
+        <div className='col-md-9'>Main Content</div>
+        {/* Navbar<vertical> */}
+        <div className='col-md-3'><Navbar></Navbar></div>
       </div>
       <Routes>
         <Route index path='/' element={<Home />}/>

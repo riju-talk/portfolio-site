@@ -33,12 +33,12 @@ body::before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-image: url('./assets/sunset-horizon-standing-alone-mountains-scenery-ai-art-4k-wallpaper-uhdpaper.com-715@1@l.jpg');
     background-size: cover;
     background-position: center;
-    filter: saturate(40%) contrast(140%) brightness(70%);
+    filter: saturate(50%) contrast(160%) brightness(65%) sepia(15%);
     color: #ffffff;
     opacity: 1; /* Adjust opacity to your preference */
     z-index: -1
