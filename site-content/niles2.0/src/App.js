@@ -8,19 +8,22 @@ import Navbar from './components/navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       {/* main content */}
       <div className='row'>
-        <div className='col-md-9'>Main Content</div>
-        {/* Navbar<vertical> */}
-        <div className='col-md-3'><Navbar></Navbar></div>
-      </div>
-      <Routes>
+        <div className='col-md-9'>
+        <div>
+        <Routes>
         <Route index path='/' element={<Home />}/>
         <Route path='/creative_room' element={<Creative/>}/>
         <Route path='/projects' element={<Project/>}/>
         <Route path='/reach_out' element={<Reach/>}/>
       </Routes>
+      </div></div>
+        {/* Navbar<vertical> */}
+        <div className='col-md-3'><Navbar></Navbar></div>
+      </div>
+      
     </div>
   );
 }

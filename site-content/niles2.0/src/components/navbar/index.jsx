@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link , useLocation} from "react-router-dom";
 
 import './styles.scss'
-const data=[
+const data = [
     {
         page: "001",
         label: "Hello There",
@@ -26,30 +25,39 @@ const data=[
     }
 ]
 
-function Navbar(){
-    return(
-    <nav className="navbar_container"> 
-    <div className="row flex-nowrap">
-        <div className="col-auto me-auto">
-            <span className="fs-4 d-none d-sm-inline">Niles Drake</span>
-        </div>
-        <div className="col">
-            <ul className="navbar_container_menu nav nav-pills flex-column">
-                {
-                    data.map(
-                        (item, key) => (
-                            <li key={key} className="navbar_container_menu_item nav_item py-2 py-sm-0 text-center nav-link">
-                                <Link className="navbar_container_menu_links" to={item.route}>
-                                    <div className=""><p className="page_no">{item.page}</p><p className="page_no">{item.label}</p></div>
-                                </Link>
-                            </li>
-                        )
-                    )
-                }
-            </ul>
-        </div>
-    </div>
-</nav>
+function Navbar() {
+    const lok_data = useLocation();
+    let location = data.filter((elt) => elt.route === lok_data.pathname);
+    return (
+        <nav className="navbar_container">
+            <div className="row">
+                <div className="transparent-background">
+                <div className="row">
+                        <div className="col-auto mx-auto d-flex align-items-center page">
+                            {location[0]?.page}
+                        </div>
+                    </div>
+                    <ul className="navbar_container__menu nav flex-column">
+                        {
+                            data.map(
+                                (item, key) => (
+                                    <li key={key} className="navbar_container__menu__item nav_item">
+                                        <Link className="navbar_container__menu__item__links" to={item.route}>
+                                            <div className="navbar_container__menu__item__links__page"><p className="page_no">{item.label}</p><p className="page_no">{item.page}</p></div>
+                                        </Link>
+                                    </li>
+                                )
+                            )
+                        }
+                    </ul>
+                    <div className="row">
+                        <div className="col-auto mx-auto d-flex align-items-center name">
+                            Niles Drake
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     );
 }
 

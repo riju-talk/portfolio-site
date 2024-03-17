@@ -1,0 +1,58 @@
+.navbar_container {
+    height: 100vh; /* Set navbar height to full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    font-family: inherit; /* Inherit font from the parent element */
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__item {
+            &__links {
+                text-decoration: none;
+                color: inherit;
+                font-size: 2em;
+
+                &__page {
+                    margin-bottom: 30px;
+                    .page_no {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        &:hover::after {
+            color: #9A5E42;
+        }
+    }
+
+    .name {
+        margin-top: 13vh;
+        font-size: 2.7em;
+        color:#9A5E42;
+    }
+
+    .page{
+        font-size: 2.7em;
+        margin-bottom: 9.5rem;
+        animation: fadeIn 0.5s ease-in-out forwards; /* Add some space below the first row */
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.col-auto.me-auto.align-items-center {
+    margin-top: auto; /* Push "Niles Drake" to the bottom */
+    font-size: 1.5em; /* Adjust font size */
+    font-weight: bold; /* Example: bold font weight */
+}
