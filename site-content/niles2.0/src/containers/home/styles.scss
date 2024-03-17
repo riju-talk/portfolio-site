@@ -1,13 +1,29 @@
 h1{
     text-align: justify;
     display: block;
-    margin: 12vh 17vh 5.55vh 17vh;
+    margin: 12vh 17vh 4.5vh 17vh;
     padding: 10px;
     font-size: 4.25rem;
     font-weight: 400;
     font-family: "K2D", sans-serif;
 }
 
-#description{
+.description{
+    font-family: "B612", sans-serif;
+    margin: 0 17vh;
+    color: var(--white-theme-sub-text-color);
+    padding: 10px;
+    font-size: 1.26rem;
     text-align: justify;
+}
+
+#description body{
+    margin-bottom: 80vh;
+}
+
+#image{
+    margin-top: 3vh;
+    border: 1px solid #192134;
+    width: 30vw;
+    height: auto;
 }

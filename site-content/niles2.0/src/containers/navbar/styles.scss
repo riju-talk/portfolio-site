@@ -16,20 +16,30 @@
                 text-decoration: none;
                 color: inherit;
                 font-size: 1.65em;
-
+                
                 &__page {
                     margin-bottom: 30px;
                     .page_no {
                         text-decoration: none;
                     }
+                    &:hover{
+                        .page_no {
+                            animation: smooth_change 0.2s ease-in-out;
+                            color: #9A5E42;
+                        }
+                        
+
+                        @keyframes smooth_change {
+                            0%{
+                                color: #ffffff;
+                            }
+                            100%{
+                                color: #9A5E42;
+                            }
+                        }
+                    }
                 }
             }
-        }
-        &::after{
-            color: #9A5E42;
-        }
-        &:hover::after {
-            color: #9A5E42;
         }
     }
 
@@ -40,6 +50,7 @@
     }
 
     .page{
+        transition: opacity 0.3s ease;
         font-size: 2.5em;
         margin-bottom: 9.5rem;
         animation: fadeIn 0.5s ease-in-out forwards; /* Add some space below the first row */
@@ -58,4 +69,13 @@
     margin-top: auto; /* Push "Niles Drake" to the bottom */
     font-size: 1.5em; /* Adjust font size */
     font-weight: bold; /* Example: bold font weight */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

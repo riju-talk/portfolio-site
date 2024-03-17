@@ -4,7 +4,7 @@ import Home from './containers/home';
 import Project from './containers/projects';
 import Creative from './containers/creatives';
 import Reach from './containers/reach';
-import Navbar from './components/navbar';
+import Navbar from './containers/navbar';
 
 function App() {
   return (
