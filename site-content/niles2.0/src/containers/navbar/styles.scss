@@ -10,7 +10,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        margin-bottom: 6vh;
         &__item {
             &__links {
                 text-decoration: none;
@@ -44,7 +44,7 @@
     }
 
     .name {
-        margin-top: 13vh;
+        margin-top: 14vh;
         font-size: 3em;
         color:#9A5E42;
     }
