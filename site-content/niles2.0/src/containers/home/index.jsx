@@ -6,7 +6,7 @@ function Home() {
     return (
         <div>
             <h1>Hello there,</h1>
-            <div id="description body">
+            <div id="description_body">
                 <p class="description">My name is Rijusmit Biswas A.K.A Niles Drake I am Geek (lol).
                     But, yes I am a nerd who is a nut for code and sci-fi flicks.
                     I am a novice programmer with knowledge and efficiency in several

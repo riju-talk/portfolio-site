@@ -52,17 +52,41 @@
     .page{
         transition: opacity 0.3s ease;
         font-size: 2.5em;
-        margin-bottom: 9.5rem;
-        animation: fadeIn 0.5s ease-in-out forwards; /* Add some space below the first row */
+        margin-bottom: 9.3rem;
     }
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
+    .page_animation-enter {
+        opacity: 1;
+      }
+      
+      .page_animation-enter-active {
+        opacity: 0;
+        transition: opacity 400ms ease-in-out;
+      }
+    
+      .page_animation-enter-done {
+        opacity: 0;
+      }
+
+      .page_animation-exit {
+        opacity: 1;
+      }
+      
+      .page_animation-exit-active {
+        opacity: 0; 
+        transition: opacity 400ms ease-in-out;
+      }
+      .page_animation-exit-done {
+        opacity: 0;
+      }
+
+      @keyframes opacity{
+        0%{
             opacity: 1;
         }
-    }
+        100%{
+            opacity: 0;
+        }
+      }
 }
 
 .col-auto.me-auto.align-items-center {
@@ -71,11 +95,3 @@
     font-weight: bold; /* Example: bold font weight */
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
