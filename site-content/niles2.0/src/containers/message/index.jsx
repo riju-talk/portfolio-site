@@ -5,7 +5,7 @@ import { BsSend } from "react-icons/bs";
 function Message() {
     return (
         <div className="wrapper">
-            <h2>Communicate with a quick message:</h2>
+            <h2>Reach me with a quick message:</h2>
             <form action="">
                 <div className="input-box">
                     <input type="text" placeholder="Name:" required />
@@ -18,7 +18,7 @@ function Message() {
                 </div>
                 <div className="send-button">
                     <button type="submit">
-                        <span className="button-text">Send</span> <BsSend className="icon" />
+                        <span className="button-text">Send</span>   <BsSend className="icon" />
                     </button>
                 </div>
 
