@@ -10,4 +10,17 @@ h1{
 
 #description{
     text-align: justify;
+    
+}
+
+.img-size{
+    object-fit: cover;
+    width: 40vh;
+    height: 30vh;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: inherit;
+    margin: 0 0 5.55vh 17vh;
 }

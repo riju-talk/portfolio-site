@@ -52,7 +52,7 @@ const contactIcons = [
 
 function Reach() {
     return (
-        <div className="container">
+        <div>
             <h1>Reach out,</h1>
             <Message />
             <div className="links">
