@@ -42,8 +42,9 @@
         outline: none;
         border-bottom: 2px solid rgba(255,255,255,.2);
         padding: 20px 45px 20px 20px;
-        max-height: 200px; /* Set maximum height */
-        min-height: 65px; /* Set minimum height */
+        overflow: hidden;
+        resize: none;/* Set maximum height */
+        min-height: 60px; /* Set minimum height */
     }
 
     input::placeholder{
