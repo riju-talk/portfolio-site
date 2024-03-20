@@ -1,7 +1,7 @@
     .wrapper{
         width: 70vh;
         background-color: transparent;
-        color: #ffffff;
+        color: var(--white-theme-sub-text-color);
         padding: 30px 40px;
         backdrop-filter : blur(30px);
         border: 2px solid rgba(255,255,255, .2);
@@ -49,14 +49,14 @@
 
     input::placeholder{
         font-size: 1.12em;
-        color: #ffffff;
+        color: var(--white-theme-sub-text-color);
 
     }
 
     textarea::placeholder{
         align-content:flex-start;
         font-size: 1.12em;
-        color: #ffffff;
+        color: var(--white-theme-sub-text-color);
     }
 
     .icon{
@@ -74,7 +74,7 @@
         border-radius: 40px;
         box-shadow: 0 0 10px rgba(192, 181, 181, 0.1);
         cursor: pointer;
-        color: #ffffff;
+        color: var(--white-theme-sub-text-color);
     }
 
     .send-button{
@@ -83,4 +83,7 @@
         display: flex;
         align-items: self-end;
         justify-content: flex-end
+    }
+    .button-text{
+        color: var(--white-theme-sub-text-color);
     }

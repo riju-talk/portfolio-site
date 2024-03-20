@@ -11,3 +11,47 @@ h1{
 #description{
     text-align: justify;
 }
+
+.links{
+    padding-top: 3vh;
+    margin-top: 3vh;
+    display: flex;
+}
+
+.social{
+    margin-left: 17vh;
+    margin-bottom: 2vh;
+}
+
+.social-icons{
+    text-align: left;
+}
+
+.social-icon{
+    width: 40px;
+    height: auto;
+    padding: 14px;
+    font-size: 2.75em;
+    i {
+        color: #CFCFCF; /* Example color */
+    }
+    i:hover{
+        color: var(--theme-for-nav);
+        animation: smooth_change 0.2s ease-in-out;
+    }
+    @keyframes smooth_change {
+        0%{
+            color: #CFCFCF;
+        }
+        100%{
+            color: var(--theme-for-nav);
+        }
+    }
+}
+
+.reach-out-heading{
+    color: #CFCFCF;
+    padding-left: 1vh;
+    text-align: left;
+    margin-bottom: 1em;
+}
