@@ -1,14 +1,13 @@
-.img_prop{
+.img-prop{
     height: 20vh;
-    width: 36vh;
+    width: auto;
     object-fit: cover;
-    border-radius: 12px;
 }
 
 .card{
-    border-radius: 12px;
-    background-color:#cfcfcf6d;
-    border: 1px solid #ffffff;
+    background-color:transparent;
+    backdrop-filter: blur(30px);
+    border: rgba(255, 255, 255, 0.2) 2px solid;
 }
 
 .text-color{
