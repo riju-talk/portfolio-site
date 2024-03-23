@@ -2,6 +2,7 @@
     height: 25vh;
     width: auto;
     object-fit: cover;
+    object-position: center;
 }
 
 .card{
@@ -16,13 +17,16 @@
 .content-text-color{
     color: var(--white-theme-sub-text-color);
     font-size: 1.2em;
+    text-decoration: none;
 }
 
 .title-color{
     color: var(--white-theme-sub-text-color);
     padding-bottom: 4%;
+    text-decoration: none;
 }
 
 .card-body{
     text-align: left;
+    text-decoration: none;
 }

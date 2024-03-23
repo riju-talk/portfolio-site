@@ -1,6 +1,5 @@
 import React from "react";
 import './styles.scss';
-import Card from "../card";
 function Project() {
     return (
         <div>
