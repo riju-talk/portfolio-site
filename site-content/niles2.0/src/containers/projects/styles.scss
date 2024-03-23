@@ -29,8 +29,49 @@ h1 {
     width: 35vw;
     scrollbar-color: var(--white-theme-sub-text-color) transparent;
     scrollbar-width: thin;
+    .project-item{
+        font-size: 1.2em;
+        color: var(--white-theme-main-color);
+        .title-color{
+            color: var(--white-theme-nav-background-color);
+        }
+    }
 }
 
 .main-body{
     margin: 0 17vh 4.5vh 17vh;
+}
+
+.body-background{
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+}
+
+.text-color{
+    color: var(--white-theme-sub-text-color);
+    font-size: 1.5rem;
+    text-decoration: solid;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    text-align: left;
+}
+
+.text-color:hover{
+    color: var(--theme-for-nav);
+    animation: smooth_change 0.12s ease-in;
+}
+
+.text-color:active{
+    color: var(--theme-for-nav);
+    animation: smooth_change 0.12s ease-in;
+}
+
+
+@keyframes smooth_change {
+    0% {
+        color: var(--white-theme-sub-text-color); // Initial color
+    }
+    100% {
+        color: #9A5E42; // Final color
+    }
 }

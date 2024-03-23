@@ -19,7 +19,8 @@ h1{
 
 #image{
     margin-top: 3vh;
-    border: 0.25px solid #192134;
+    border: rgba(255, 255, 255, 0.2) 2px solid;
+    box-shadow: 0 0 10px rgba(192, 181, 181, 0.1);
     width: 30vw;
     height: auto;
     

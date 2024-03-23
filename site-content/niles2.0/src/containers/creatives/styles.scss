@@ -12,14 +12,20 @@ h1{
     text-align: justify;
 }
 
-.img-size{
-    object-fit: cover;
-    width: 40vh;
-    height: 30vh;
-}
 .content{
     display: flex;
     flex-grow: inherit;
     margin: 0 0 5.55vh 17vh;
-    gap: 40px;
+    overflow-x: scroll;
+    gap: 2em;
+    scrollbar-width: thin;
+    scrollbar-color: var(--white-theme-sub-text-color) transparent;
+    height: 65vh;
+    .item{
+        height: 100%;
+    }
+}
+
+::-webkit-scrollbar-button {
+    display: none; /* Hide scrollbar buttons */
 }
