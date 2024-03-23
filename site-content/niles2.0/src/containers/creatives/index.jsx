@@ -1,6 +1,6 @@
 import React from "react";
 import './styles.scss';
-import Sections from "../sections";
+import Card from "../card";
 
 import image1 from '../../assets/writings.jpg';
 import image2 from '../../assets/photography.jpg';
@@ -20,11 +20,11 @@ function Creative() {
     return (
         <div>
             <h1>Creative Room,</h1>
-            <div className="content">
-                <Sections image={image1} title={"Writing"} description={descriptions[0]}></Sections>
-                <Sections image={image2} title={"Photography"} description={descriptions[1]}></Sections>
-                <Sections image={image3} title={"Blog On Life"} description={descriptions[2]}></Sections>
-                <Sections image={image4} title={"Tech Diary"} description={descriptions[3]}></Sections>
+            <div className="row row-cols-1 row-cols-md-2 g-4">
+                <Card image={image1} title={"Writing"} description={descriptions[0]}></Card>
+                <Card image={image2} title={"Photography"} description={descriptions[1]}></Card>
+                <Card image={image3} title={"Blog On Life"} description={descriptions[2]}></Card>
+                <Card image={image4} title={"Tech Diary"} description={descriptions[3]}></Card>
             </div>
         </div>
     )

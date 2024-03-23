@@ -2,7 +2,7 @@ import React from "react";
 import './styles.css';
 
 
-function Card({ image, title, discription, sub_title }) {
+function Card({ image, title, discription}) {
     return (
         <div>
             <div class="col">
