@@ -9,6 +9,7 @@
     background-color:transparent;
     backdrop-filter: blur(30px);
     border: rgba(255, 255, 255, 0.2) 2px solid;
+    transition: border-color 0.5s;
     box-shadow: 0 0 10px rgba(192, 181, 181, 0.1);
     width: 20vw;
     height: 100%;
@@ -29,4 +30,8 @@
 .card-body{
     text-align: left;
     text-decoration: none;
+}
+
+.card:hover{
+    border-color: var(--white-theme-sub-text-color);
 }
