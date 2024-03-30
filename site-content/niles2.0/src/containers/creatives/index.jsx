@@ -2,6 +2,7 @@ import React from "react";
 import './styles.scss';
 import Card from "../card";
 import { Link } from "react-router-dom";
+import { TypeAnimation } from 'react-type-animation';
 
 import image1 from '../../assets/writings.jpg';
 import image2 from '../../assets/photography.jpg';
@@ -20,7 +21,7 @@ const descriptions = [
 function Creative() {
     return (
         <div>
-            <h1>Creative Room,</h1>
+            <h1><TypeAnimation sequence={["Creative Room,"]}/></h1>
             <div className="content">
                     <Link className="navbar_container__menu__item__links" to={"https://www.webnovel.com/profile/4320094667?appId=10"} target="_blank" onClick={() => {}}>
                     <div className="item" >

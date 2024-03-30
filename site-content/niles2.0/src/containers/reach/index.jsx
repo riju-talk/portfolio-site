@@ -1,5 +1,6 @@
 import React from "react";
 import Message from "../message";
+import { TypeAnimation } from 'react-type-animation';
 
 import './styles.scss'
 
@@ -58,7 +59,7 @@ const contactIcons = [
 function Reach() {
     return (
         <div>
-            <h1>Reach out,</h1>
+            <h1><TypeAnimation sequence={["Reach Out,"]}/></h1>
             <Message />
             <div className="links">
                 <div className="social">

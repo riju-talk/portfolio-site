@@ -1,11 +1,12 @@
 import React from "react";
 import './styles.scss'
 import image from "../../assets/delhi_metro.jpg";
+import { TypeAnimation } from 'react-type-animation';
 
 function Home() {
     return (
         <div>
-            <h1>Hello there,</h1>
+            <h1><TypeAnimation sequence={["Hello there,"]}/></h1>
             <div id="description_body">
                 <p class="description">My name is Rijusmit Biswas A.K.A Niles Drake I am Geek (lol).
                     But, yes I am a nerd who is a nut for code and sci-fi flicks.
@@ -25,7 +26,7 @@ function Home() {
                     I also love photography and also writing and I have an ever growing tech stack and a consistent thirst for knowledge.
                 </p>
             </div>
-            <img src={image} alt="Delhi metro mai apka swagat hai (Welcome to Delhi metro)" id="image"/>
+            <img src={image} alt="Delhi metro mai apka swagat hai (Welcome to Delhi metro)" id="image-home-page"/>
         </div>
     )
 }
