@@ -1,0 +1,13 @@
+li > .nav-link{
+    color: white;
+    text-decoration-line:none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.bar{
+    padding: 10px;
+    text-align: center;
+}

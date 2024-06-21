@@ -7,11 +7,22 @@
   font-style: normal;
   color: #fff;
   text-decoration-line: none ;
+  min-width: 300px;
+  margin: 0;
+  padding: 0;
 }
 
 body{
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/background.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./assets/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position:top;
+  height: max-content;
+}
+
+@media screen and (max-width: 500px) {
+  body{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./assets/background-mobile.jpg');
+  }
 }

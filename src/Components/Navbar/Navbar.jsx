@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import './Navbar.css';
 
 function Navbar() {
-    return <div>
-        <nav>
-            <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/social">Social</a></li>
+    return <div className="w-80 p-3 bar">
+        <nav class="border rounded-5">
+            <ul className="nav justify-content-center nav-underline">
+                <li className="nav-item"><Link to="/home" className="nav-link">Home</Link></li>
+                <li className="nav-item"><Link to="/projects" className="nav-link">Projects</Link></li>
+                <li className="nav-item"><Link to="/social" className="nav-link">Social</Link></li>
             </ul>
         </nav>
     </div>
