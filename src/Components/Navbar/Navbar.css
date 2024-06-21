@@ -1,19 +1,10 @@
 li > .nav-link{
     color: white;
     text-decoration-line:none;
-    width: 8vw;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 li{
     list-style-type: none;
-}
-
-.bar{
-    text-align: center;
-}
-
-nav{
-    padding: 0.5vw;
 }
