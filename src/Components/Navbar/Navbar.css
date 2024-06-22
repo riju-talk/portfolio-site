@@ -8,3 +8,22 @@ li > .nav-link{
 li{
     list-style-type: none;
 }
+
+
+.nav-link:hover{
+    color: #83a79c;
+}
+
+#middle{
+    border-left: #83a79c  solid 1px;
+    border-right: #83a79c  solid 1px;
+}
+
+ul{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+#top-spacing{
+    padding-top: 3vh;
+}
