@@ -6,7 +6,7 @@ li > .nav-link{
 }
 
 li{
-    list-style-type: none;
+    list-style-type: none;;
 }
 
 
@@ -14,9 +14,8 @@ li{
     color: #83a79c;
 }
 
-#middle{
-    border-left: #83a79c  solid 1px;
-    border-right: #83a79c  solid 1px;
+.nav-link:focus{
+    color: #6e827b;
 }
 
 ul{

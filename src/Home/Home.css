@@ -1,0 +1,14 @@
+.discription{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.00938em;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+
+.border-image{
+    --bs-border-opacity: 1;
+    border-color: #83a79c;
+}

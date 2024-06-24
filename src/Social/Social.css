@@ -1,0 +1,38 @@
+.btn{
+    background-color: transparent;
+    border: 1px solid #83a79c;
+    color: #83a79c;
+}
+
+.btn:hover{
+    background-color: #83a79c;
+    color: white;
+}
+
+.form-control{
+    background-color: transparent;
+    border: 1px solid #83a79c;
+    color: #83a79c;
+}
+.form-control:focus{
+    background-color: transparent;
+    border: 1px solid #83a79c;
+    color: #83a79c;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: #83a79c;  /* Change this color to your desired placeholder color */
+}
+
+textarea{
+    resize: none;
+}
+
+.details{
+    padding: 0.7vh 0;
+}
+
+.links i{
+    color: #83a79c;
+}
