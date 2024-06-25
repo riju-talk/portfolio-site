@@ -9,14 +9,14 @@ function Social() {
     const [message, setMessage] = useState("");
 
     return (
-        <div>
+        <div className="px-auto">
             <Container fluid>
                 <Row>
                     <h1>Reach Out,</h1>
                 </Row>
-                <Row className="grid gap-0 column-gap-5">
+                <Row className="grid gap-0 column-gap-5 content">
                     <Col>
-                        <div className="border p-4">
+                        <div className="border p-4 mb-5 h-80 w-100">
                             <form className="d-flex flex-column">
                                 <div className="mb-3">
                                     <label className="form-label" htmlFor="name">Name: </label>
@@ -24,11 +24,11 @@ function Social() {
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label" htmlFor="email">Email: </label>
-                                    <input className="form-control" placeholder="your email" type="email" name="email" id="email" value={email} onChange={(e) => { setEmail(e.target.value) }} />
+                                    <input className="form-control" placeholder="Your email" type="email" name="email" id="email" value={email} onChange={(e) => { setEmail(e.target.value) }} />
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label" htmlFor="message">Message: </label>
-                                    <textarea className="form-control text" placeholder="Leave a message here.." name="message" id="message" value={message} onChange={(e) => { setMessage(e.target.value) }} rows="6" />
+                                    <textarea className="form-control text" placeholder="Leave a message here.." name="message" id="message" value={message} onChange={(e) => { setMessage(e.target.value) }} />
                                 </div>
                                 <div className="mb-3">
                                     <button type="submit" className="btn">Submit</button>
@@ -50,21 +50,21 @@ function Social() {
                             <div className="d-flex flex-column align-items-start justify-content-center">
                                 <div className="links details contiainer py-4 my-3">
                                     <h4>Social</h4>
-                                    <i className="bi bi-linkedin px-3"></i>
-                                    <i className="bi bi-github px-3"></i>
-                                    <i className="bi bi-facebook px-3"></i>
-                                    <i className="bi bi-twitter-x px-3"></i>
-                                    <i className="bi bi-instagram px-3"></i>
-                                    <i className="bi bi-reddit px-3"></i>
+                                    <i className="bi bi-linkedin px-2 ps-0"></i>
+                                    <i className="bi bi-github px-2"></i>
+                                    <i className="bi bi-facebook px-2"></i>
+                                    <i className="bi bi-twitter-x px-2"></i>
+                                    <i className="bi bi-instagram px-2"></i>
+                                    <i className="bi bi-reddit px-2"></i>
                                 </div>
                                 <div className="links details contiainer py-4 my-3">
                                     <h4>Contact</h4>
-                                    <i className="bi bi-envelope px-3"></i>
-                                    <i className="bi bi-phone px-3"></i>
-                                    <i className="bi bi-whatsapp px-3"></i>
-                                    <i className="bi bi-telegram px-3"></i>
-                                    <i className="bi bi-signal px-3"></i>
-                                    <i className="bi bi-file-earmark-person px-3"></i>
+                                    <i className="bi bi-envelope px-2 ps-0"></i>
+                                    <i className="bi bi-phone px-2"></i>
+                                    <i className="bi bi-whatsapp px-2"></i>
+                                    <i className="bi bi-telegram px-2"></i>
+                                    <i className="bi bi-signal px-2"></i>
+                                    <i className="bi bi-file-earmark-person px-2"></i>
                                 </div>
                             </div>
                         </Row>

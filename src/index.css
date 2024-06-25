@@ -7,10 +7,11 @@
   font-weight: 500;
   font-style: normal;
   color: #fff;
-  text-decoration-line: none ;
-  min-width: 300px;
+  text-decoration-line: none;
   margin: 0;
   padding: 0;
+  min-width: 200px;
+  max-width: 100%;
 }
 p{
   font-family: "Nunito Sans", sans-serif;
@@ -29,5 +30,16 @@ body{
 @media screen and (max-width: 500px) {
   body{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./assets/background-mobile.jpg');
+  }
+
+  p{
+    font-size: 11px;
+  }
+}
+
+
+@media screen and (max-width: 1540px) {
+  p{
+    font-size: calc(0.7rem + 0.2vw);
   }
 }

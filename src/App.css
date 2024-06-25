@@ -7,10 +7,21 @@
 .row-lg-4{
     align-items: center;
     height: 15vh;
+    margin: 0 auto;
 }
 
 .row-lg-8{
+    margin: 0 auto;
+    padding: 0 auto;
     margin-top: 3vh;
     padding-top: 3vh;
     height: 50vh;
+}
+
+
+@media screen and (max-width: 400px) {
+    .main-body{
+        margin: 6vh 3vw;
+        padding: 2vh 5vw;
+    }
 }

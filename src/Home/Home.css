@@ -1,4 +1,4 @@
-.discription{
+.discription {
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -8,7 +8,14 @@
     margin-bottom: 1.5vh;
 }
 
-.border-image{
-    --bs-border-opacity: 1;
-    border-color: #83a79c;
+@media screen and (max-width: 1220px) {
+    .content{
+        min-width: 300px;
+    }
+    .col{
+        min-width: 100%;
+    }
+    .row{
+        max-width: 100%;
+    }
 }

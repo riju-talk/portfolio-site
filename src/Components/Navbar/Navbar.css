@@ -26,3 +26,7 @@ ul{
 #top-spacing{
     padding-top: 3vh;
 }
+
+.nav-item, .nav-link{
+    box-shadow: none;
+}

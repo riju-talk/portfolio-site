@@ -27,6 +27,7 @@
 
 textarea{
     resize: none;
+    height: calc(6rem + 2vh);
 }
 
 .details{
@@ -35,4 +36,17 @@ textarea{
 
 .links i{
     color: #83a79c;
+}
+
+@media screen and (max-width: 1220px) {
+    .content{
+        min-width: 360px;
+    }
+    .col{
+        min-width: 100%;
+    }
+}
+
+.bi{
+    font-size: max(calc(0.7rem + 0.5vw),calc(1rem + 0.2vw));
 }
