@@ -1,15 +1,15 @@
 import React from "react";
 
-function Card() {
+function Card({im, title, discription}) {
     return (
         <div>
             <div className="row g-0 position-relative">
-                <div className="col-md-6 mb-md-0 p-md-4">
-                    <img src="..." class="w-100" alt="..." />
+                <div className="col-md-4 mb-md-0 p-md-4 border border-custom-color">
+                    <img src={im} className="w-100" alt="..."/>
                 </div>
-                <div className="col-md-6 p-4 ps-md-0">
-                    <h5 className="mt-0">Columns with stretched link</h5>
-                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                <div className="col-md-8 p-4 ps-md-0">
+                    <h5 className="mt-0">{title}</h5>
+                    <p>{discription}</p>
                 </div>
             </div>
         </div>
