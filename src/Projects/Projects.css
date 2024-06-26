@@ -1,3 +1,27 @@
 .projects{
     height: 50vh;
 }
+
+
+.col-9{
+    height: 50vh;
+}
+
+.col-3{
+    height: 50vh;
+}
+
+.list-group-item, .list-group-item-action{
+    background-color: transparent;
+    color: #83a79c; 
+}
+
+.list-group-item:hover, .list-group-item-action:hover{
+    background-color: #83a79c;
+    color: #fff; 
+}
+
+.list-group-item:focus, .list-group-item-action:focus{
+    background-color: #83a79c;
+    color: #000000; 
+}
