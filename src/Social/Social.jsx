@@ -2,14 +2,21 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
 import './Social.css';
-function Social() {
+import { Helmet } from "react-helmet";
 
+
+function Social() {
+ 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
     return (
         <div className="px-auto">
+            <Helmet>
+                <title>Kindly Reach Out</title>
+                <meta name="description" content="Social" />
+            </Helmet>
             <Container fluid>
                 <Row>
                     <h1>Reach Out,</h1>

@@ -11,7 +11,7 @@
 
 .modified{
     filter: brightness(0.8);
-    height: 60%;
     object-fit: cover;
     object-position: center;
+    height: calc(3vw + 8vh);
 }

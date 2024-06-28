@@ -12,6 +12,7 @@
   padding: 0;
   min-width: 200px;
   max-width: 100%;
+  scroll-behavior: smooth;
 }
 p{
   font-family: "Nunito Sans", sans-serif;
@@ -43,3 +44,17 @@ body{
     font-size: calc(0.7rem + 0.2vw);
   }
 }
+
+::-webkit-scrollbar-thumb{
+  background-color: #83a79c;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: rgba(255, 255, 255, 0.201);
+  border-radius: 10px;
+}
+
+

@@ -4,10 +4,15 @@ import Col from 'react-bootstrap/Col';
 import './Home.css';
 import { Container, Image } from "react-bootstrap";
 import image from "../assets/delhi_metro.jpg";
+import { Helmet } from "react-helmet";
 
 function Home() {
     return (
         <div>
+            <Helmet>
+                <title>Hi, I'm Rijusmit Biswas</title>
+                <meta name="description" content="Home" />
+            </Helmet>
             <Container fluid className="justify-content-center">
                 <Row>
                     <h1>Hello There,</h1>

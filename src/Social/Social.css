@@ -50,3 +50,22 @@ textarea{
 .bi{
     font-size: max(calc(0.7rem + 0.5vw),calc(1rem + 0.2vw));
 }
+
+.bi:hover{
+    font-size: max(calc(0.7rem + 0.5vw),calc(1rem + 0.2vw));
+    animation: fadeIn 0.125s;
+    color: #fff;
+}
+
+.bi:focus{
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        color: #83a79c;
+    }
+    to {
+        color: #fff;
+    }
+}

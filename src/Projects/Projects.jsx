@@ -9,10 +9,16 @@ import notes_app from "../assets/notes_app.png";
 import bundle_scripts from "../assets/bundle_scripts.png";
 import ecell_website from "../assets/e-cell.png";
 import heydo from "../assets/heydo.png";
+import { Helmet } from "react-helmet";
+
 
 function Projects() {
     return (
         <div>
+            <Helmet>
+                <title>Take a Look at my projects</title>
+                <meta name="description" content="Projects" />
+            </Helmet>
             <Container fluid>
                 <Row><h1>My Projects,</h1></Row>
                 <Row className="grid gap-0 column-gap-5">
