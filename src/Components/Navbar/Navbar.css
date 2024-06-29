@@ -3,6 +3,7 @@ li > .nav-link{
     text-decoration-line:none;
     padding-left: 2rem;
     padding-right: 2rem;
+    box-shadow: none;
 }
 
 li{
@@ -27,6 +28,3 @@ ul{
     padding-top: 3vh;
 }
 
-.nav-item, .nav-link{
-    box-shadow: none;
-}

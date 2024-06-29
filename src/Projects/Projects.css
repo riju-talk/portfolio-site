@@ -1,8 +1,6 @@
 .projects{
     height: 50vh;
 }
-
-
 .col-8{
     height: 50vh;
 }
@@ -24,4 +22,23 @@
 .list-group-item:focus, .list-group-item-action:focus{
     background-color: #83a79c;
     color: #000000; 
+}
+
+@media screen and (max-width: 1280px) {
+    .content{
+        min-width: 360px;
+    }
+    .col{
+        min-width: 100%;
+    }
+    .col-8{
+        height: 50vh;
+        width: 100%;
+        margin-bottom: 10vh;
+    }
+    
+    .col-3{
+        height: 50vh;
+        width: 100%;
+    }
 }

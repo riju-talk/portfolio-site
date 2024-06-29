@@ -5,6 +5,7 @@ import './Home.css';
 import { Container, Image } from "react-bootstrap";
 import image from "../assets/delhi_metro.jpg";
 import { Helmet } from "react-helmet";
+import { TypeAnimation } from 'react-type-animation';
 
 function Home() {
     return (
@@ -15,7 +16,7 @@ function Home() {
             </Helmet>
             <Container fluid className="justify-content-center">
                 <Row>
-                    <h1>Hello There,</h1>
+                    <TypeAnimation speed={40} wrapper="h1" sequence={["Hello There,"]}/>
                 </Row>
                 <Row className="grid gap-0 column-gap-5 content">
                     <Col className="align-items-center mb-5">

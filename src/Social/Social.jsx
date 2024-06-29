@@ -4,6 +4,7 @@ import { useState } from "react";
 import './Social.css';
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { TypeAnimation } from 'react-type-animation';
 
 
 function Social() {
@@ -37,11 +38,11 @@ function Social() {
             </Helmet>
             <Container fluid>
                 <Row>
-                    <h1>Reach Out,</h1>
+                <TypeAnimation speed={40} wrapper="h1" sequence={["Reach Out,"]}/>
                 </Row>
                 <Row className="grid gap-0 column-gap-5 content">
                     <Col>
-                        <div className="border p-4 mb-5 h-80 w-100">
+                        <div className="border p-4 mb-5 h-80 w-100 mt-3">
                             <form className="d-flex flex-column">
                                 <div className="mb-3">
                                     <label className="form-label" htmlFor="name">Name: </label>
@@ -62,7 +63,7 @@ function Social() {
                         </div>
                     </Col>
                     <Col>
-                        <Row>
+                        <Row className="mt-3">
                             <div>
                                 <p>This website is made and maintained by Rijusmit Biswas know more about me through my social links. Download my resume through the contact section.</p>
                                 <p>
