@@ -8,7 +8,7 @@ function Navbar() {
         <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1 }}
         >
             {<div className="container-fluid" id="top-spacing">
             <nav className="navbar-expand-md border rounded-5">
