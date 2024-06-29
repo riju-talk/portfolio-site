@@ -5,6 +5,7 @@ import './Social.css';
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from 'react-type-animation';
+import { motion } from "framer-motion";
 
 
 function Social() {
@@ -42,6 +43,11 @@ function Social() {
                 </Row>
                 <Row className="grid gap-0 column-gap-5 content">
                     <Col>
+                        <motion.div
+                        initial={{ opacity: 0, fill: 0.5, translateY: -10}}
+                        animate={{ opacity: 1, fill: 1, translateY: 0}}
+                        transition={{ duration: 1 }}
+                        >
                         <div className="border p-4 mb-5 h-80 w-100 mt-3">
                             <form className="d-flex flex-column">
                                 <div className="mb-3">
@@ -61,8 +67,14 @@ function Social() {
                                 </div>
                             </form>
                         </div>
+                        </motion.div>
                     </Col>
                     <Col>
+                    <motion.div
+                        initial={{ opacity: 0, fill: 0.5}}
+                        animate={{ opacity: 1, fill: 1}}
+                        transition={{ duration: 1 }}
+                        >
                         <Row className="mt-3">
                             <div>
                                 <p>This website is made and maintained by Rijusmit Biswas know more about me through my social links. Download my resume through the contact section.</p>
@@ -74,6 +86,7 @@ function Social() {
                         </Row>
                         <Row className="align-items-center">
                             <div className="d-flex flex-column align-items-start justify-content-center">
+                                <></>
                                 <div className="links details contiainer py-4 my-3">
                                     <h4>Social</h4>
                                     <Link to="https://www.linkedin.com/in/rijusmit-biswas-933a3524b/" target="_blank"><i className="bi bi-linkedin px-2 ps-0"></i></Link>
@@ -94,6 +107,7 @@ function Social() {
                                 </div>
                             </div>
                         </Row>
+                        </motion.div>
                     </Col>
                 </Row>
             </Container>

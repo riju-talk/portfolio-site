@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Navbar.css';
+import { motion } from "framer-motion";
 
 function Navbar() {
     return (
-        <div>{
-            <div className="container-fluid" id="top-spacing">
+        <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        >
+            {<div className="container-fluid" id="top-spacing">
             <nav className="navbar-expand-md border rounded-5">
                 <ul className="nav justify-content-center nav-justified">
                     <li className="nav-item">
@@ -27,7 +32,7 @@ function Navbar() {
             </nav>
         </div>
         }
-        </div>
+        </motion.div>
     );
 }
 
