@@ -28,3 +28,8 @@ ul{
     padding-top: 3vh;
 }
 
+@media screen and (max-width: 1040px) {
+    .nav-item .nav-link{
+        width: 100%;
+    }
+}

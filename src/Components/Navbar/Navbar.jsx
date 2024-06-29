@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <div>{
             <div className="container-fluid" id="top-spacing">
-            <nav className="navbar-expand-xxl border rounded-5">
+            <nav className="navbar-expand-md border rounded-5">
                 <ul className="nav justify-content-center nav-justified">
                     <li className="nav-item">
                         <Link to="/home" className="nav-link">

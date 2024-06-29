@@ -29,10 +29,6 @@ body{
 }
 
 @media screen and (max-width: 500px) {
-  body{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./assets/background-mobile.jpg');
-  }
-
   p{
     font-size: 11px;
   }
