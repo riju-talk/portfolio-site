@@ -4,6 +4,7 @@ import Card from "../Components/Card/Card";
 import "./Projects.css";
 import { Helmet } from "react-helmet";
 import { TypeAnimation } from 'react-type-animation';
+import { motion } from "framer-motion";
 
 function Projects() {
     return (
@@ -16,18 +17,20 @@ function Projects() {
                 <Row><TypeAnimation speed={40} wrapper="h1" sequence={["Projects,"]}/></Row>
                 <Row className="grid gap-0 column-gap-5">
                     <div className="col-3 pt-4 px-3">
-                        <div id="list-projects" className="list-group">
-                            <a className="list-group-item list-group-item-action" href="#list-item-1">This Site</a>
-                            <a className="list-group-item list-group-item-action" href="#list-item-2">Sign Language Classifier</a>
-                            <a className="list-group-item list-group-item-action" href="#list-item-3">Online Electronics Store</a>
-                            <a className="list-group-item list-group-item-action" href="#list-item-4">Note Taking and List Making App</a>
-                            <a className="list-group-item list-group-item-action" href="#list-item-5">Bundle of Shell Scripts</a>
-                            <a className="list-group-item list-group-item-action" href="#list-item-6">E-Cell IIIT-Delhi Website</a>
-                            <a className="list-group-item list-group-item-action" href="#list-item-7">Heydo Tech - Form Builder</a>
-                            <a className="list-group-item list-group-item-action" href="#list-item-8">Cyfuse IIIT-Delhi student's portal</a>
-                        </div>
+                        <motion.div variants={{ hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.25 } } }} initial="hidden" animate="show"  id="list-projects" className="list-group">
+                            <motion.a variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="list-group-item list-group-item-action" href="#list-item-1">This Site</motion.a>
+                            <motion.a variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="list-group-item list-group-item-action" href="#list-item-2">Sign Language Classifier</motion.a>
+                            <motion.a variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="list-group-item list-group-item-action" href="#list-item-3">Online Electronics Store</motion.a>
+                            <motion.a variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="list-group-item list-group-item-action" href="#list-item-4">Note Taking and List Making App</motion.a>
+                            <motion.a variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="list-group-item list-group-item-action" href="#list-item-5">Bundle of Shell Scripts</motion.a>
+                            <motion.a variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="list-group-item list-group-item-action" href="#list-item-6">E-Cell IIIT-Delhi Website</motion.a>
+                            <motion.a variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="list-group-item list-group-item-action" href="#list-item-7">Heydo Tech - Form Builder</motion.a>
+                            <motion.a variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="list-group-item list-group-item-action" href="#list-item-8">Cyfuse IIIT-Delhi student's portal</motion.a>
+                        </motion.div>
                     </div>
-                    <div className="col-8 overflow-y-scroll content list">
+                    <motion.div initial={{ opacity: 0, fill: 0, translateX: 40}}
+                            animate={{ opacity: 1, fill: 1, translateX: 0}}
+                            transition={{ duration: 1 }} className="col-8 overflow-y-scroll content list">
                         <div data-bs-spy="scroll" data-bs-target="#list-projects" data-bs-smooth-scroll="true" className="scrollspy-example over" tabIndex="0">
                             <Card key="1" id="list-item-1" link={"https://github.com/riju-talk/portfolio-site"} title="This Site" description="This website is my stepping stone towards webdev, I had used React.Js using Vite to execute the front end and it also contains a small back end feature which you can see in the /social route, just click on social. This is my 3rd portfolio site, which is responsive for all screen sizes. You can see my certifications and credentials in my resume and on my linked in profile."></Card>
                             <Card key="2" id="list-item-2" link={"https://github.com/riju-talk/sign_lang"} title="Sign Language Classifier" description="This is my project I made for my Statistical Machine Learning course, I use Datasets from Kaggle, I used couple datasets and Algorithms to achieve the same, I used CNN, FNN using both signmoid and Relu activation function to yeild better accuracy. But it still needs some work as there are minot fixatures to be made. I used opencv, tensorflow and keras to handle the traning and testing lagic, also did data augmentations for better result. "></Card>
@@ -38,7 +41,7 @@ function Projects() {
                             <Card key="7" id="list-item-7" link={""} title="Heydo Tech - Form Builder" description="Heydo Tech is a startup that specializes in form building solutions. I have been involved in the development of their flagship product, a drag-and-drop form builder. The application allows users to create custom forms with various input fields, validation rules, and submission actions. It also provides an intuitive interface for managing form submissions and generating reports. I have worked on both the frontend and backend components of the application, using React.js for the frontend and Node.js for the backend."></Card>
                             <Card key="8" id="list-item-8" link={"https://github.com/Cyfuse1/CyFuse-new-website"} title="Cyfuse IIIT-Delhi Student's Portal" description="Cyfuse, a prominent club at IIIT-Delhi, has launched a comprehensive portal aimed at bridging the gap between students and the professional world. This innovative platform serves as a dynamic space where companies can post internship opportunities, and students can showcase their resumes. Additionally, it features a section for publishing specific recruitment requirements for various projects, enabling students to be directly recruited. The portal also caters to the freelancing needs of students, providing them with a platform to apply for freelance projects. This initiative not only facilitates professional growth for students but also offers companies access to a pool of talented individuals ready to contribute to their projects."></Card>
                         </div>
-                    </div>
+                    </motion.div>
                 </Row>
             </Container>
         </div>
