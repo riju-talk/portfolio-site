@@ -54,29 +54,3 @@
         font-size: 10px;
     }
 }
-
-@media screen and (max-width: 400px) {
-    .card{
-        min-width: 50px;
-    }
-    .card-text{
-        font-size: 10px;
-    }
-    .card-title{
-        font-size: 15px;
-    }
-    .card-subtitle{
-        font-size: 10px;
-    }
-    .card-link{
-        font-size: 10px;
-    }
-    .card-img-top{
-        height: calc(3vw + 8vh);
-    }
-
-    .btn, .bi{
-        font-size: 10px;
-    }
-    
-}
