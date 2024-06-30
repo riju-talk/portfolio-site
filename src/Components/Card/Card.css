@@ -1,6 +1,7 @@
 .card{
     background-color: transparent;
     color: #83a79c;
+    margin-bottom: 2vh;
 }
 
 .card-text{
@@ -14,4 +15,68 @@
     object-fit: cover;
     object-position: center;
     height: calc(3vw + 8vh);
+}
+
+@media screen and (max-width: 1220px) {
+    .card{
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card{
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card{
+        width: 1vw;
+    }
+    .card-text{
+        text-wrap: wrap;
+        font-size: 10px;
+    }
+    .card-title{
+        font-size: 15px;
+    }
+    .card-subtitle{
+        font-size: 10px;
+    }
+    .card-link{
+        font-size: 10px;
+    }
+    .card-img-top{
+        height: calc(3vw + 8vh);
+    }
+
+    .btn, .bi{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card{
+        min-width: 50px;
+    }
+    .card-text{
+        font-size: 10px;
+    }
+    .card-title{
+        font-size: 15px;
+    }
+    .card-subtitle{
+        font-size: 10px;
+    }
+    .card-link{
+        font-size: 10px;
+    }
+    .card-img-top{
+        height: calc(3vw + 8vh);
+    }
+
+    .btn, .bi{
+        font-size: 10px;
+    }
+    
 }

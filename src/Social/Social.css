@@ -85,8 +85,6 @@ textarea {
 
 @media screen and (max-width: 450px) {
     .input-field {
-        width: 250px !important;
-        padding: 0 !important;
         font-size: 10px !important;
         height: calc(12rem + 40vw) !important;
     }
@@ -94,15 +92,12 @@ textarea {
         font-size: 10px !important;
     }
     input.form-control {
-        width: 50px !important;
         font-size: 10px !important;
     }
     button[type="button"] {
-        width: 50px !important;
         font-size: 10px !important;
     }
     textarea.form-control {
-        width: 50px !important;
         resize: none !important;
         font-size: 10px !important;
     }

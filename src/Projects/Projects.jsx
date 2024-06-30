@@ -27,7 +27,7 @@ function Projects() {
                             <a className="list-group-item list-group-item-action" href="#list-item-8">Cyfuse IIIT-Delhi student's portal</a>
                         </div>
                     </div>
-                    <div className="col-8 overflow-y-scroll content">
+                    <div className="col-8 overflow-y-scroll content list">
                         <div data-bs-spy="scroll" data-bs-target="#list-projects" data-bs-smooth-scroll="true" className="scrollspy-example over" tabIndex="0">
                             <Card key="1" id="list-item-1" link={"https://github.com/riju-talk/portfolio-site"} title="This Site" description="This website is my stepping stone towards webdev, I had used React.Js using Vite to execute the front end and it also contains a small back end feature which you can see in the /social route, just click on social. This is my 3rd portfolio site, which is responsive for all screen sizes. You can see my certifications and credentials in my resume and on my linked in profile."></Card>
                             <Card key="2" id="list-item-2" link={"https://github.com/riju-talk/sign_lang"} title="Sign Language Classifier" description="This is my project I made for my Statistical Machine Learning course, I use Datasets from Kaggle, I used couple datasets and Algorithms to achieve the same, I used CNN, FNN using both signmoid and Relu activation function to yeild better accuracy. But it still needs some work as there are minot fixatures to be made. I used opencv, tensorflow and keras to handle the traning and testing lagic, also did data augmentations for better result. "></Card>

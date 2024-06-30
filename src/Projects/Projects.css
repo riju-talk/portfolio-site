@@ -72,6 +72,26 @@
     
 }
 
+@media screen and (max-width: 500px) {
+    .content{
+        min-width: 100px;
+    }
+    .col-8{
+        height: 50vh;
+        width: 100%;
+    }
+    
+    .col-3{
+        height: 55vh;
+        width: 100%;
+    }
+
+    .list-group-item, .list-group-item-action{ 
+        font-size: calc(0.4rem + 1.5vw);
+    }
+    
+}
+
 @media screen and (max-width: 400px) {
     .content{
         min-width: 100px;
@@ -82,12 +102,15 @@
     }
     
     .col-3{
-        height: 40vh;
+        height: 50vh;
         width: 100%;
     }
 
     .list-group-item, .list-group-item-action{ 
         font-size: calc(0.4rem + 1.5vw);
     }
-    
+
+    .list{
+        width: 100%;
+    }
 }
