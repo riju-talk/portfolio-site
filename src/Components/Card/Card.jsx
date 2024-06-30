@@ -4,7 +4,7 @@ import { Row, Col } from "react-bootstrap";
 
 function Card({ id, title, description, link}) {
     return (
-        <div className="card" id={id}>
+        <div className="card border" id={id}>
             <Row>
                 <Col>
                     <div className="card-body">
