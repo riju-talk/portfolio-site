@@ -33,7 +33,7 @@ function Home() {
                         </motion.div>
                     </Col>
                     <Col className="container-fluid align-items-center mb-5 ">
-                        <div className="p-3">
+                        <div>
                             <motion.div
                             initial={{ opacity: 0, fill: 0, translateX: 10 }}
                             animate={{ opacity: 1, fill: 1, translateX: 0}}

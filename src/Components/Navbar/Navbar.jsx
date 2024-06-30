@@ -4,6 +4,7 @@ import './Navbar.css';
 import { motion } from "framer-motion";
 
 function Navbar() {
+    const outerWidth = window.outerWidth;
     return (
         <motion.div
         initial={{ opacity: 0, scale: 0.5 }}

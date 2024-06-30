@@ -1,20 +1,21 @@
-.btn{
+.btn {
     background-color: transparent;
     border: 1px solid #83a79c;
     color: #83a79c;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #83a79c;
     color: white;
 }
 
-.form-control{
+.form-control {
     background-color: transparent;
     border: 1px solid #83a79c;
     color: #83a79c;
 }
-.form-control:focus{
+
+.form-control:focus {
     background-color: transparent;
     border: 1px solid #83a79c;
     color: #83a79c;
@@ -25,39 +26,30 @@
     color: #83a79c;  /* Change this color to your desired placeholder color */
 }
 
-textarea{
+textarea {
     resize: none;
     height: calc(6rem + 2vh);
 }
 
-.details{
+.details {
     padding: 0.7vh 0;
 }
 
-.links i{
+.links i {
     color: #83a79c;
 }
 
-@media screen and (max-width: 1220px) {
-    .content{
-        min-width: 360px;
-    }
-    .col{
-        min-width: 100%;
-    }
+.bi {
+    font-size: max(calc(0.7rem + 0.5vw), calc(1rem + 0.2vw));
 }
 
-.bi{
-    font-size: max(calc(0.7rem + 0.5vw),calc(1rem + 0.2vw));
-}
-
-.bi:hover{
-    font-size: max(calc(0.7rem + 0.5vw),calc(1rem + 0.2vw));
+.bi:hover {
+    font-size: max(calc(0.7rem + 0.5vw), calc(1rem + 0.2vw));
     animation: fadeIn 0.125s;
     color: #fff;
 }
 
-.bi:focus{
+.bi:focus {
     color: #fff;
 }
 
@@ -67,5 +59,76 @@ textarea{
     }
     to {
         color: #fff;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .content {
+        min-width: 360px;
+    }
+    .col {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        min-width: 150px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .input-field {
+        width: 250px !important;
+        padding: 0 !important;
+        font-size: 10px !important;
+        height: calc(12rem + 40vw) !important;
+    }
+    .input-form {
+        font-size: 10px !important;
+    }
+    input.form-control {
+        width: 50px !important;
+        font-size: 10px !important;
+    }
+    button[type="button"] {
+        width: 50px !important;
+        font-size: 10px !important;
+    }
+    textarea.form-control {
+        width: 50px !important;
+        resize: none !important;
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .input-field {
+        font-size: 11px;
+        height: calc(10rem + 40vw);
+    }
+    .input-form {
+        font-size: 11px;
+    }
+    input[type="text"], input[type="email"] {
+        width: 300px;
+        font-size: 11px;
+    }
+    button[type="button"] {
+        width: 300px;
+        font-size: 11px;
+    }
+    textarea.form-control {
+        resize: none;
+        font-size: 11px;
+    }
+    .description {
+        margin-top: 1.5vh;
     }
 }

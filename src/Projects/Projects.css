@@ -12,6 +12,7 @@
 .list-group-item, .list-group-item-action{
     background-color: transparent;
     color: #83a79c; 
+    font-size: calc(0.4rem + 0.5vw);
 }
 
 .list-group-item:hover, .list-group-item-action:hover{
@@ -38,7 +39,55 @@
     }
     
     .col-3{
+        height:40vh;
+        width: 100%;
+    }
+
+    .list-group-item, .list-group-item-action{ 
+        font-size: calc(0.2rem + 1vw);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content{
+        min-width: 200px;
+    }
+    .col{
+        min-width: 100%;
+    }
+    .col-8{
+        height: 50vh;
+        width: 100%;
+        margin-bottom: 10vh;
+    }
+    
+    .col-3{
+        height:40vh;
+        width: 100%;
+    }
+
+    .list-group-item, .list-group-item-action{ 
+        font-size: calc(0.2rem + 1.4vw);
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .content{
+        min-width: 100px;
+    }
+    .col-8{
         height: 50vh;
         width: 100%;
     }
+    
+    .col-3{
+        height: 40vh;
+        width: 100%;
+    }
+
+    .list-group-item, .list-group-item-action{ 
+        font-size: calc(0.4rem + 1.5vw);
+    }
+    
 }
