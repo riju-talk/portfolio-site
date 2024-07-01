@@ -16,18 +16,17 @@ function Navbar() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
         >
-            <nav className="navbar">
+            <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">Rijusmit Biswas</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-                        <span className="navbar-toggler-icon"></span>
+                    <i className="navbar-toggler-icon bi bi-list"></i>
                     </button>
                     <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div className="offcanvas-header">
-                            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <div className="offcanvas-header p-4 ps-5">
+                            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                         </div>
-                        <div className="offcanvas-body">
-                            <ul className="navbar-nav">
+                        <div className="offcanvas-body adjuster">
+                            <ul className="navbar-nav d-flex justify-content-around border rounded-5">
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/home" onClick={closeOffcanvas}>Home</Link>
                                 </li>
@@ -39,7 +38,7 @@ function Navbar() {
                                 </li>
                             </ul>
                         </div>
-                </div>
+                    </div>
                 </div>
             </nav>
         </motion.div>
