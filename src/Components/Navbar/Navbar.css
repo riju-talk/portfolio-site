@@ -34,6 +34,11 @@
 }
 
 @media (max-width: 992px) {
+
+    .nav-link:hover {
+        color: black;
+    }
+
     .navbar-collapse {
         display: none !important;
     }
