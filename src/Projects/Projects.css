@@ -39,7 +39,7 @@
     }
     
     .col-3{
-        height:50vh;
+        height: max(calc(40vh + 10vw),40vh);
         width: 100%;
     }
 
@@ -62,7 +62,7 @@
     }
     
     .col-3{
-        height:50vh;
+        height: max(calc(40vh + 10vw),40vh);
         width: 100%;
     }
 
@@ -82,7 +82,7 @@
     }
     
     .col-3{
-        height: 60vh;
+        height: max(calc(40vh + 20vw),40vh);
         width: 100%;
     }
 
@@ -106,7 +106,7 @@
     }
     
     .col-3{
-        height: 50vh;
+        height: max(calc(45vh + 20vw),45vh);
         width: 100%;
     }
 
