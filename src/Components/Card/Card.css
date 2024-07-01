@@ -51,7 +51,8 @@
 
 @media screen and (max-width: 500px) {
     .card{
-        min-width: 80px;
+        min-width: 70px;
+        max-width: 100%;
     }
     .card-text{
         min-width: 80px;
@@ -68,7 +69,7 @@
         font-size: 8px;
     }
     .custom-btn{
-        min-width: fit-content;
+        min-width: 80%;
 
     }
     .btn, .bi{

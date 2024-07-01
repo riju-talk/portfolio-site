@@ -25,6 +25,11 @@
     color: #000000; 
 }
 
+.list-group-item:active, .list-group-item-action:active{
+    background-color: #ffffff;
+    color: #000000; 
+}
+
 @media screen and (max-width: 1280px) {
     .content{
         min-width: 360px;
@@ -115,6 +120,8 @@
     }
 
     .list{
-        width: 100%;
+        min-width: 40%;
+        max-width: 170%;
+        padding-right: 10px;
     }
 }
