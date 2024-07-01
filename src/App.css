@@ -25,3 +25,13 @@
         padding: 2vh 5vw;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .row-lg-8{
+        margin: 0 auto;
+        padding: 0 auto;
+        margin-top: 0vh;
+        padding-top: 0vh;
+        height: 50vh;
+    }
+}

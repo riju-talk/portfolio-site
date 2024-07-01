@@ -1,41 +1,5 @@
-li > .nav-link{
-    color: white;
-    text-decoration-line:none;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    box-shadow: none;
-}
-
-li{
-    list-style-type: none;;
-}
-
-
-.nav-link:hover{
-    color: #83a79c;
-}
-
-.nav-link:focus{
-    color: #6e827b;
-}
-
-ul{
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-}
-
-#top-spacing{
-    padding-top: 3vh;
-}
-
-@media screen and (max-width: 1040px) {
-    .nav-item .nav-link{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .nav-item .nav-link{
-        width: 100%;
-    }
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
 }
