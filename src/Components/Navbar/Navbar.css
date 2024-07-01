@@ -11,6 +11,10 @@
     color: white;
     text-align: center;
 }
+
+.nav-link:hover {
+    color: white;
+}
 .navbar-toggler {
     display: none;
     border: none;
@@ -47,7 +51,7 @@
         margin: 0; 
     }
 
-    .adjuster> ul{
+    .adjuster> .border{
         border: 0;
     }
 
