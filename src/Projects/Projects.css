@@ -39,7 +39,7 @@
     }
     
     .col-3{
-        height:40vh;
+        height:50vh;
         width: 100%;
     }
 
@@ -62,7 +62,7 @@
     }
     
     .col-3{
-        height:40vh;
+        height:50vh;
         width: 100%;
     }
 
@@ -82,8 +82,12 @@
     }
     
     .col-3{
-        height: 55vh;
+        height: 60vh;
         width: 100%;
+    }
+
+    .px-3{
+        padding-left: 10px !important;
     }
 
     .list-group-item, .list-group-item-action{ 

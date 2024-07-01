@@ -10,7 +10,7 @@ function Card({ id, title, description, link}) {
                     <div className="card-body">
                         <h5 className="card-title">{title}</h5>
                         <p className="card-text">{description}</p>
-                        <a href={link} className="btn stretched-link">Visit the Repo <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a href={link} className="btn stretched-link custom-btn">Visit the Repo <i className="bi bi-box-arrow-up-right"></i></a>
                     </div>
                 </Col>
             </Row>

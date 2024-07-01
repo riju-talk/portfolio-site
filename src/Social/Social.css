@@ -73,7 +73,7 @@ textarea {
 
 @media screen and (max-width: 600px) {
     .content {
-        min-width: 200px;
+        min-width: 100px;
     }
     .bi{
         font-size: 13px;
@@ -81,12 +81,6 @@ textarea {
 }
 
 @media screen and (max-width: 500px) {
-    .content {
-        min-width: 150px;
-    }
-}
-
-@media screen and (max-width: 450px) {
     .input-field {
         font-size: 10px !important;
         height: calc(12rem + 40vw) !important;
@@ -96,13 +90,16 @@ textarea {
     }
     input.form-control {
         font-size: 10px !important;
+        max-width: 100%;
     }
     button[type="button"] {
         font-size: 10px !important;
+        max-width: 100%;
     }
     textarea.form-control {
         resize: none !important;
         font-size: 10px !important;
+        max-width: 100%;
     }
 }
 
@@ -115,11 +112,9 @@ textarea {
         font-size: 11px;
     }
     input[type="text"], input[type="email"] {
-        width: 300px;
         font-size: 11px;
     }
     button[type="button"] {
-        width: 300px;
         font-size: 11px;
     }
     textarea.form-control {
@@ -128,5 +123,69 @@ textarea {
     }
     .description {
         margin-top: 1.5vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .input-field {
+        font-size: 10px !important;
+        height: calc(13rem + 40vw) !important;
+    }
+    .input-form {
+        font-size: 10px !important;
+    }
+    input.form-control {
+        font-size: 10px !important;
+        min-width: 80% !important;
+        max-width: 100% !important; /* Modified: Set max-width to 80% */
+    }
+    button[type="button"] {
+        font-size: 10px !important;
+        max-width: 80% !important;
+        min-width: 75% !important; /* Modified: Set max-width to 80% */
+    }
+    textarea.form-control {
+        resize: none !important;
+        font-size: 10px !important;
+        max-width: 100% !important; /* Modified: Set max-width to 80% */
+        min-width: 75% !important;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    input.form-control {
+        font-size: 10px !important;
+        min-width: 75% !important;
+        max-width: 100% !important; /* Modified: Set max-width to 80% */
+    }
+    button[type="button"] {
+        font-size: 10px !important;
+        max-width: 75% !important;
+        min-width: 75% !important; /* Modified: Set max-width to 80% */
+    }
+    textarea.form-control {
+        resize: none !important;
+        font-size: 10px !important;
+        max-width: 70% !important; /* Modified: Set max-width to 80% */
+        min-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    input.form-control {
+        font-size: 10px !important;
+        min-width: 1% !important;
+        max-width: 75% !important; /* Modified: Set max-width to 80% */
+    }
+    button[type="button"] {
+        font-size: 10px !important;
+        max-width: 60% !important;
+        min-width: 1% !important; /* Modified: Set max-width to 80% */
+    }
+    textarea.form-control {
+        resize: none !important;
+        font-size: 10px !important;
+        max-width: 75% !important; /* Modified: Set max-width to 80% */
+        min-width: 1% !important;
     }
 }

@@ -25,15 +25,10 @@
 
 @media screen and (max-width: 600px) {
     .card{
-        min-width: 200px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .card{
-        width: 1vw;
+        min-width: 100px;
     }
     .card-text{
+        min-width: 100px;
         text-wrap: wrap;
         font-size: 10px;
     }
@@ -46,10 +41,36 @@
     .card-link{
         font-size: 10px;
     }
-    .card-img-top{
-        height: calc(3vw + 8vh);
+    a .btn{
+        min-width: 100px;
     }
+    .btn, .bi{
+        font-size: 10px;
+    }
+}
 
+@media screen and (max-width: 500px) {
+    .card{
+        min-width: 80px;
+    }
+    .card-text{
+        min-width: 80px;
+        text-wrap: wrap;
+        font-size: 10px;
+    }
+    .card-title{
+        font-size: 15px;
+    }
+    .card-subtitle{
+        font-size: 10px;
+    }
+    .card-link{
+        font-size: 8px;
+    }
+    .custom-btn{
+        min-width: fit-content;
+
+    }
     .btn, .bi{
         font-size: 10px;
     }

@@ -19,9 +19,9 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .main-body{
-        margin: 6vh 3vw;
+        margin: 6vh 1vw;
         padding: 2vh 5vw;
     }
 }
