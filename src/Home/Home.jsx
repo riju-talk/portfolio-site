@@ -26,8 +26,8 @@ function Home() {
                         animate={{ opacity: 1, fill: 1 }}
                         transition={{ duration: 1 }}>
                         <div className="d-flex flex-column gx-5 h-75">
-                            <p className="discription">My name is Rijusmit Biswas A.K.A Niles Drake I am Geek (lol). But, yes I am a nerd who is a nut for code and sci-fi flicks. I am a novice programmer with knowledge and efficiency in several programming languages and technologies.</p>
-                            <p className="discription">I am also a web developer by choice and passion. I am a writer who is currently working on web novels you can find on known pages. I love to connect and collaborate with a lot of people. I am 20 years old and I am an undergrad at IIIT-Delhi, pursuing my Bachelors in computer science and social science. I aspire to learn and become a researcher in machine learning. My current expertise lies in UI/UX, Web Development and Ethnography.</p>
+                            <p className="discription">My name is Rijusmit Biswas A.K.A Niles Drake I am Geek (lol). But, yes I am a nut for code and sci-fi flicks. I am a seasoned programmer with knowledge and efficiency in several programming languages and technologies. including C, C++, Python, Java, JS, Dart, etc.</p>
+                            <p className="discription">I am also a web developer by choice and passion. I am a writer who is currently working on web novels you can find on known pages. I love to connect and collaborate with a lot of people. I am 20 years old and an undergrad at IIIT-Delhi, pursuing my Bachelors in computer science and social science. I aspire to learn and become a researcher in machine learning. My current expertise lies in Web Development, Machine learning applications using modern tools and Ethnography.</p>
                             <p className="discription">I also love photography and also writing and I have an ever growing tech stack and a consistent thirst for knowledge.</p>
                         </div>
                         </motion.div>
