@@ -40,11 +40,10 @@ textarea {
 }
 
 .bi {
-    font-size: max(calc(0.7rem + 0.5vw), calc(1rem + 0.2vw));
+    font-size: max(calc(0.75rem + 0.7vw), calc(1em + 0.4vw));
 }
 
 .bi:hover {
-    font-size: max(calc(0.7rem + 0.5vw), calc(1rem + 0.2vw));
     animation: fadeIn 0.125s;
     color: #fff;
 }
@@ -76,7 +75,7 @@ textarea {
         min-width: 100px;
     }
     .bi{
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 
