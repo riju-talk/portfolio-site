@@ -125,3 +125,42 @@
         padding-right: 10px;
     }
 }
+
+@media screen and (max-height: 650px){
+    .col-8{
+        height: 50vh;
+        width: 100%;
+        overflow-x:hidden;
+    }
+
+    .col-3{
+        height: max(calc(60vh + 15vw),50vh);
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 350px){
+    .col-8{
+        height: 50vh;
+        width: 100%;
+        overflow-x:hidden;
+    }
+
+    .col-3{
+        height: max(calc(60vh + 15vw),50vh);
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .col-8{
+        height: 50vh;
+        width: 100%;
+        max-width: max-content;
+    }
+    .content .list{
+        min-width: 100%;
+        max-width: max-content;
+        padding: 0;
+    }    
+}

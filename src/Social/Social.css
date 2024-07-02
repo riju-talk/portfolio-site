@@ -189,3 +189,15 @@ textarea {
         min-width: 1% !important;
     }
 }
+
+@media screen and (max-width: 400px){
+    .input-field{
+        min-height: calc(15rem + 40vw);
+    }
+}
+
+@media screen and (max-height: 800px){
+    .input-field{
+        min-height: calc(15rem + 40vw);
+    }
+}
