@@ -16,7 +16,7 @@ function Projects() {
             <Container fluid>
                 <Row><TypeAnimation speed={40} wrapper="h1" sequence={["Projects,"]}/></Row>
                 <Row className="grid gap-0 column-gap-5">
-                    <div className="col-3 pt-4 px-3">
+                    <div className="col-3 pt-4 px-3 overflow-y-auto">
                         <motion.div variants={{ hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.25 } } }} initial="hidden" animate="show"  id="list-projects" className="list-group">
                             <motion.a variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="list-group-item list-group-item-action" href="#list-item-1">This Site</motion.a>
                             <motion.a variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="list-group-item list-group-item-action" href="#list-item-2">Sign Language Classifier</motion.a>

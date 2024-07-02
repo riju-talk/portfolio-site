@@ -19,7 +19,10 @@
     display: none;
     border: none;
     color: white;
+    font-size: 30vw;
+    right: 0;
 }
+
 
 
 .navbar-toggler-icon {
