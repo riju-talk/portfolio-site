@@ -32,10 +32,10 @@ function Navbar() {
                                     <Link className="nav-link" to="/home" onClick={closeOffcanvas}>Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/Projects" onClick={closeOffcanvas}>Projects</Link>
+                                    <Link className="nav-link" to="/projects" onClick={closeOffcanvas}>Projects</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/Social" onClick={closeOffcanvas}>Social</Link>
+                                    <Link className="nav-link" to="/social" onClick={closeOffcanvas}>Social</Link>
                                 </li>
                             </ul>
                         </div>
