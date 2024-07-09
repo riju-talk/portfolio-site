@@ -9,7 +9,7 @@ function Navbar() {
         const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
         bsOffcanvas.hide();
     };
-
+    const date = new Date();
     return (
         <motion.div
             className="px-4"
@@ -19,7 +19,7 @@ function Navbar() {
         >
             <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
                 <div className="container-fluid">
-                    <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <button className="navbar-toggler nav-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                         <i className="bi bi-list"></i>
                     </button>
                     <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -36,6 +36,9 @@ function Navbar() {
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/social" onClick={closeOffcanvas}>Social</Link>
+                                </li>
+                                <li>
+                                    { date.getTime()  }
                                 </li>
                             </ul>
                         </div>

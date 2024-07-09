@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
-import './Social.css';
+
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
+import './Social.css';
 
 
 function Social() {
@@ -63,7 +64,7 @@ function Social() {
                                         <textarea className="form-control text" placeholder="Leave a message here.." name="message" id="message" value={message} onChange={(e) => { setMessage(e.target.value) }} />
                                     </div>
                                     <div className="mb-3">
-                                        <button type="button" onClick={handle_form} className="btn">Submit</button>
+                                        <button type="button" onClick={handle_form} className="btn submit">Submit</button>
                                     </div>
                                 </form>
                             </div>

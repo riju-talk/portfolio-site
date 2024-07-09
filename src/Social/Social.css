@@ -23,7 +23,8 @@
 }
 
 .form-control::placeholder {
-    color: #83a79c;  /* Change this color to your desired placeholder color */
+    color: #83a79c;
+    /* Change this color to your desired placeholder color */
 }
 
 textarea {
@@ -74,7 +75,7 @@ textarea {
     .content {
         min-width: 100px;
     }
-    .bi{
+    .bi {
         font-size: 15px;
     }
 }
@@ -110,7 +111,8 @@ textarea {
     .input-form {
         font-size: 11px;
     }
-    input[type="text"], input[type="email"] {
+    input[type="text"],
+    input[type="email"] {
         font-size: 11px;
     }
     button[type="button"] {
@@ -136,17 +138,20 @@ textarea {
     input.form-control {
         font-size: 10px !important;
         min-width: 80% !important;
-        max-width: 100% !important; /* Modified: Set max-width to 80% */
+        max-width: 100% !important;
+        /* Modified: Set max-width to 80% */
     }
     button[type="button"] {
         font-size: 10px !important;
         max-width: 80% !important;
-        min-width: 75% !important; /* Modified: Set max-width to 80% */
+        min-width: 75% !important;
+        /* Modified: Set max-width to 80% */
     }
     textarea.form-control {
         resize: none !important;
         font-size: 10px !important;
-        max-width: 100% !important; /* Modified: Set max-width to 80% */
+        max-width: 100% !important;
+        /* Modified: Set max-width to 80% */
         min-width: 75% !important;
     }
 }
@@ -155,17 +160,20 @@ textarea {
     input.form-control {
         font-size: 10px !important;
         min-width: 75% !important;
-        max-width: 100% !important; /* Modified: Set max-width to 80% */
+        max-width: 100% !important;
+        /* Modified: Set max-width to 80% */
     }
     button[type="button"] {
         font-size: 10px !important;
         max-width: 75% !important;
-        min-width: 75% !important; /* Modified: Set max-width to 80% */
+        min-width: 75% !important;
+        /* Modified: Set max-width to 80% */
     }
     textarea.form-control {
         resize: none !important;
         font-size: 10px !important;
-        max-width: 70% !important; /* Modified: Set max-width to 80% */
+        max-width: 70% !important;
+        /* Modified: Set max-width to 80% */
         min-width: 100% !important;
     }
 }
@@ -174,29 +182,38 @@ textarea {
     input.form-control {
         font-size: 10px !important;
         min-width: 1% !important;
-        max-width: 75% !important; /* Modified: Set max-width to 80% */
+        max-width: 75% !important;
+        /* Modified: Set max-width to 80% */
     }
     button[type="button"] {
         font-size: 10px !important;
         max-width: 60% !important;
-        min-width: 1% !important; /* Modified: Set max-width to 80% */
+        min-width: 1% !important;
+        /* Modified: Set max-width to 80% */
     }
     textarea.form-control {
         resize: none !important;
         font-size: 10px !important;
-        max-width: 75% !important; /* Modified: Set max-width to 80% */
+        max-width: 75% !important;
+        /* Modified: Set max-width to 80% */
         min-width: 1% !important;
     }
 }
 
-@media screen and (max-width: 400px){
-    .input-field{
+@media screen and (max-width: 400px) {
+    .input-field {
         min-height: calc(15rem + 40vw);
     }
 }
 
-@media screen and (max-height: 800px){
-    .input-field{
+@media screen and (max-height: 800px) {
+    .input-field {
         min-height: calc(15rem + 40vw);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    button[type="button"] .submit {
+        font-size: 13px !important;
     }
 }
