@@ -37,9 +37,6 @@ function Navbar() {
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/social" onClick={closeOffcanvas}>Social</Link>
                                 </li>
-                                <li>
-                                    { date.getTime()  }
-                                </li>
                             </ul>
                         </div>
                     </div>
