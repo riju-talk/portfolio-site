@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
 
@@ -21,13 +20,13 @@ function Social() {
             To: "technosniper.net@gmail.com",
             From: "technosniper.net@gmail.com",
             Subject: "Visitor: Contact Form Submission from Website",
-            Body: "Message: " + message + "\n\nFrom: " + name + "\nEmail: " + email
+            Body: "<p>Message: " + message + "</p><br/><br/><p>From: " + name + "</p><br/><p>Email: " + email + "</p>"
         }).then(
             message => alert(message + "\n\nEmail sent successfully")
         ).catch(
             error => {
-                console.error("Failed to send email:", error); // Log any errors
-                alert("Failed to send email. Please try again later.");
+            console.error("Failed to send email:", error); // Log any errors
+            alert("Failed to send email. Please try again later.");
             }
         );
     }
