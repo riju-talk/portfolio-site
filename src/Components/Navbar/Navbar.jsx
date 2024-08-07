@@ -15,13 +15,13 @@ function Navbar() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
         >
-            <nav className="navbar navbar-expand-xl bg-custom-navbar bg-transparent border rounded-5">
+            <nav className="navbar navbar-expand-xl bg-custom-navbar bg-transparent">
                 <div className="container-lg justify-content-around">
                     <button  className="navbar-toggler btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <i className="bi bi-menu-button-wide text-light"></i>
                     </button>
                     <div className="collapse navbar-collapse justify-content-evenly" >
-                    <div className="navbar-nav d-flex justify-content-around w-75">
+                    <div className="navbar-nav d-flex justify-content-around w-75 border rounded-5">
                             <div className="nav-item">
                                 <Link to="/home" className="nav-link text-white">Home</Link>
                             </div>
