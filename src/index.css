@@ -20,7 +20,7 @@ p{
   font-weight: 300;
 }
 body{
-  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('./assets/background.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('./assets/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

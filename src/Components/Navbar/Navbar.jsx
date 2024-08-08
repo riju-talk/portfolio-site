@@ -21,7 +21,7 @@ function Navbar() {
                         <i className="bi bi-menu-button-wide text-light"></i>
                     </button>
                     <div className="collapse navbar-collapse justify-content-evenly" >
-                    <div className="navbar-nav d-flex justify-content-around w-75 border rounded-51">
+                    <div className="navbar-nav d-flex justify-content-around w-75 border rounded-5">
                             <div className="nav-item">
                                 <Link to="/home" className="nav-link text-white">Home</Link>
                             </div>
