@@ -103,7 +103,7 @@ function Social() {
                                     <Link to="https://wa.me/+918929693930" target="_blank"><motion.i variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="bi bi-whatsapp px-2"></motion.i></Link>
                                     <Link to="https://t.me/rb_wb2004" target="_blank"><motion.i variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="bi bi-telegram px-2"></motion.i></Link>
                                     <Link to="https://signal.me/#eu/0Potwu6QfoGkINzjGRuQPNYyLjInxjlilIWw2kv0-AMwHefjop5KlZDsVm8kbHce" target="_blank"><motion.i variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="bi bi-signal px-2"></motion.i></Link>
-                                    <Link to="https://drive.google.com/file/d/1UpyUJ1xNJzmw-QN8r5VjIRjw3of-w8ku/view?usp=sharing" target="_blank"><motion.i variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="bi bi-file-earmark-person px-2"></motion.i></Link>
+                                    <Link to="https://drive.google.com/file/d/1_QAlWwuYznveMqePY5wmX1ZIEtgyAgCI/view?usp=sharing" target="_blank"><motion.i variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }} className="bi bi-file-earmark-person px-2"></motion.i></Link>
                                 </motion.div>
                             </div>
                         </Row>
